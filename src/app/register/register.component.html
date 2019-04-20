@@ -1,0 +1,66 @@
+<div *ngIf="isSignedUp; else signupForm">
+    <a style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+        Your registration is successful. Please login!
+       </a> 
+</div>
+
+<ng-template #signupForm>
+    <div class="d-flex justify-content-center h-100">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-center">
+                    <div class="brand_logo_container">
+                      <img src="./assets/images/vermeg-lgo.png" class="brand_logo" alt="Logo">
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+  <div class="row col-sm-6" style="max-width:350px;">
+      <div class="d-flex justify-content-center">
+    <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+      <div class="form-group ">
+        <label for="name"></label>
+        <input type="text" class="form-control" placeholder="Your name"  style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif" name="name" [(ngModel)]="form.name" #name="ngModel" required />
+        <div *ngIf="f.submitted && name.invalid">
+          <div *ngIf="name.errors.required" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ; color: #d83431">Name is required</div>
+        </div>
+      </div>
+      <div class="form-group ">
+        <label for="username"></label>
+        <input type="text" class="form-control" placeholder="Username" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif" name="username" [(ngModel)]="form.username" #username="ngModel"
+          required />
+        <div *ngIf="f.submitted && username.invalid">
+          <div *ngIf="username.errors.required" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ; color: #d83431">Username is required</div>
+        </div>
+      </div>
+      <div class="form-group ">
+        <label for="email"></label>
+        <input type="text" class="form-control" placeholder="Your Email" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif" name="email" [(ngModel)]="form.email" #email="ngModel" required email />
+        <div *ngIf="f.submitted && email.invalid">
+          <div *ngIf="email.errors.required"style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ; color: #d83431">Email is required</div>
+          <div *ngIf="email.errors.email">Email must be a valid email address</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="password"></label>
+        <input type="password" class="form-control" placeholder="Password" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif" name="password" [(ngModel)]="form.password" #password="ngModel"
+          required minlength="6" />
+        <div *ngIf="f.submitted && password.invalid">
+          <div *ngIf="password.errors.required"style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ; color: #d83431">Password is required</div>
+          <div *ngIf="password.errors.minlength">Password must be at least 6 characters</div>
+        </div>
+      </div>
+      <br/>
+      <div class="form-group ">
+        <button class="btn btn-dark d-flex justify-content-center" style="width:450px">Register</button>
+        <div *ngIf="f.submitted && isSignUpFailed" class="alert alert-warning">
+          Signup failed!<br/>{{errorMessage}}
+        </div>
+      </div>
+    </form>
+  </div>
+  </div>
+</div>
+</div>
+</div>
+</ng-template>

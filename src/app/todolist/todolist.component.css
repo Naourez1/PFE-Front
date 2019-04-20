@@ -1,0 +1,27 @@
+td{
+    background: lightyellow;
+    padding: 5px;
+    height: 100px;
+    width: 200px;
+    
+}
+th{
+    background: #dc3545;
+    color: white;
+    padding: 5px;
+    position: center;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+input{
+    height: 40px;
+    width: 700px;
+
+}
+button{
+    height: 40px;
+    width: 100px;
+    background: #dc3545;
+    color: white;
+}

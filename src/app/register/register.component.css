@@ -1,0 +1,51 @@
+.card {
+    height: 520px;
+    width: 550px;
+    margin-top: 10px;
+    margin-bottom: auto;
+    background: transparent;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1px;
+
+}
+.card-header{
+    background-color: transparent;
+}
+.brand_logo_container {
+    position: absolute;
+    height: 170px;
+    width: 170px;
+    top: -75px;
+    border-radius: 50%;
+    background: transparent;
+    padding: 10px;
+    text-align: center;
+}
+.brand_logo {
+    
+    height: 200px;
+    width: 200px;
+    border: 2px solid transparent;
+    transition-property: width, height;
+    transition-duration: 200ms;
+    position: right;
+}
+.brand_logo:hover{
+    width: 180px;
+    height: 170px;
+    
+}
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding-top: 52px;
+   
+}
+.form-group {
+    margin-bottom: 0.5rem;
+}

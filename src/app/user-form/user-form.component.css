@@ -1,0 +1,46 @@
+.card {
+    height: 600px;
+    width: 550px;
+    margin-top: 50px;
+    margin-bottom: auto;
+    background: transparent;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1px;
+
+}
+.container {
+    margin-top: 0px;
+}
+
+.input-group-text {
+    background: #c0392b !important;
+    color: white !important;
+    border: 0 !important;
+    border-radius: 0.25rem 0 0 0.25rem !important;
+}
+.input_user,
+.input_pass:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #c0392b !important;
+}
+
+.input-group-prepend span{
+    width: 60px;
+    color: black;
+    border:3px !important;
+    }
+    .btnn{
+        width: 79%;
+        background: #c0392b  !important;
+        color: white !important; 
+        position: center;
+    }
+    

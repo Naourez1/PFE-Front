@@ -1,0 +1,67 @@
+ <div *ngIf="isLoggedIn; else loggedOut">
+  Logged in as {{roles}}.
+</div>-
+
+<ng-template #loggedOut>
+    <div class="d-flex justify-content-center h-100">
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-center">
+                    <div class="brand_logo_container">
+                      <img src="./assets/images/vermeg-lgo.png" class="brand_logo" alt="Logo">
+                    </div>
+                </div>
+            </div>
+            <div class="card-body mb-2" >
+
+  <div class="row col-sm-6" style="max-width:350px;">
+    <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+      <div class="form-group input-group mb-5">
+      <div class="input-group-prepend">
+          <span class="input-group-text">
+            <i class="fas fa-user">
+            </i>
+          </span>
+          <label for="username"></label>
+        <input type="text" class="form-control" placeholder="username" name="username" [(ngModel)]="form.username" #username="ngModel"
+          required />
+        </div>
+        <div *ngIf="f.submitted && username.invalid">
+          <div *ngIf="username.errors.required">Username is required</div>
+        </div>
+      </div>
+
+      <div class="form-group input-group mb-4">
+          <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="fas fa-key">
+                </i>
+              </span>
+        <label for="password"></label>
+        <input type="password" class="form-control " placeholder="password" name="password" [(ngModel)]="form.password" #password="ngModel"
+          required minlength="6" />
+        </div>
+        <div *ngIf="f.submitted && password.invalid">
+          <div *ngIf="password.errors.required">Password is required</div>
+          <div *ngIf="password.errors.minlength">Password must be at least 6 characters</div>
+        </div>
+      </div>
+      
+      <div class="card-footer">
+      <div class="form-group d-flex justify-content-center">
+        <button class="btn btn-dark">Login</button>
+        <div *ngIf="f.submitted && isLoginFailed" class="alert">
+          Login failed {{errorMessage}}
+        </div>
+      </div>
+      </div>
+    </form>
+    </div>
+    <hr/>
+    <p>Don't have an account?</p>
+    
+    <a href="signup" class="btn btn-dark d-flex justify-content-center">Sign Up</a>
+  </div>
+  </div>
+  </div>
+</ng-template>

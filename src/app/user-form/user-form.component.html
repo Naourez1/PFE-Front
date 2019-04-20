@@ -1,0 +1,70 @@
+<div class="container ">
+        <div class="d-flex justify-content-center h-100">
+                <div class="card">
+        <form name="form"  (ngSubmit)="processForm() && onSubmit()" #f="ngForm" novalidate>
+            
+            <div class="form group input-group mb-5">
+                    <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                    <i class="fas fa-user">
+                                    </i>
+                                  </span>
+                <label for="name"></label>
+                <input type="text" name="name" placeholder="Name" class="form-control" [(ngModel)]="user.name" #name="ngModel"
+                required />
+            </div>
+            <div *ngIf="f.submitted && name.invalid">
+                    <div *ngIf="name.errors.required">Name is required</div>
+                  </div>
+            </div>
+            
+                    <div class="form-group input-group mb-5">
+                            <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                            <i class="fas fa-user">
+                                            </i>
+                                          </span>
+                <label for="username"></label>
+                <input type="text" name="username"  placeholder="Username"  class="form-control" [(ngModel)]="user.username" #username="ngModel"
+                required />
+            </div>
+            <div *ngIf="f.submitted && username.invalid">
+                    <div *ngIf="username.errors.required">Username is required</div>
+                  </div>
+            </div>
+        
+            <div class="form group input-group mb-5">
+                    <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                    <i class="fas fa-envelope ">
+                                    </i>
+                                  </span>
+                    <label for="lname"></label>
+                    <input type="text" name="email"  placeholder="Email"  class="form-control" [(ngModel)]="user.email" #email="ngModel"
+                    required />
+                </div>
+                <div *ngIf="f.submitted && email.invalid">
+                        <div *ngIf="email.errors.required" style="color :#d83431" >Email is required</div>
+                      </div>
+            </div>
+
+                <div class="form group input-group mb-4">
+                        <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                        <i class="fas fa-key">
+                                        </i>
+                                      </span>
+                        <label for="lname"></label>
+                        <input type="password"  placeholder="Password"  name="password" class="form-control" [(ngModel)]="user.password" #password="ngModel"
+                        required minlength="6" />
+                    </div>
+                    <div *ngIf="f.submitted && password.invalid">
+                            <div *ngIf="password.errors.required">Password is required</div>
+                            <div *ngIf="password.errors.minlength">Password must be at least 6 characters</div>
+                          </div>
+                        </div>
+            <input type="submit" value="save" class="btnn">
+        </form>
+        </div>
+        </div>
+    </div>

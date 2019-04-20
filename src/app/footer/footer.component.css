@@ -1,0 +1,44 @@
+footer .footer-bottom {
+	position: relative;
+	padding: 40px 0 20px;
+}
+
+footer .footer-bottom .footer-logo {
+	position: absolute;
+	top: 50%;
+  left: 50%;
+  bottom: 0%;
+	transform: translate(-50%, -150%);
+}
+
+footer .footer-bottom .footer-logo img {
+	display: block;
+	width: 120px;
+	margin: auto;
+}
+
+footer .footer-bottom .footer-social {
+  float: right;
+  display: inline-block;
+  margin: 0 10px 0 0;
+  padding-right: 0.5em;
+  white-space: 2px;
+}
+
+footer .footer-bottom .footer-social a {
+	font-size: 23px;
+	color: #aaaaaa;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: all 0.2s ease-in-out;
+}
+
+footer .footer-bottom .footer-social a:hover {
+	color: #d83431;
+}
+
+footer .footer-bottom .copywrite {
+	float: left;
+	font-size: 12px;
+	padding-top: 10px;
+}

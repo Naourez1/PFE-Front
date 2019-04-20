@@ -1,0 +1,22 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style=" background: linear-gradient(to bottom, grey 0%, #d83431 100%);
+
+width: 20%; float:left; height: 100vh; overflow: hidden; position: fixed;"
+ *ngIf="!navService.hideSideBar">
+       
+ <app-sidebar>
+    
+ </app-sidebar>
+ </div>
+ 
+ <div style="float:right;" [style.width]="navService.hideSideBar? '100%': '80%'">
+    
+  <app-navbar></app-navbar>
+
+  <router-outlet></router-outlet>
+  <app-footer> </app-footer>
+ </div>
+    
+
+<!-- [ngClass]="{'width': nav.hideSideBar? '80%': '100%'}"-->
+

@@ -1,0 +1,22 @@
+.img-fluid {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80%;
+    background-size: cover;
+    height: 200px;
+    border-radius: .5rem;
+    margin-top: 0.5rem;
+  }
+  .my-card
+{
+    position:absolute;
+    left:40%;
+    top:-20px;
+    border-radius:50%;
+}
+.jumbotron {
+    margin-top: 0.3rem;
+    margin-bottom: 2rem;
+    background-color: white;
+    border-radius: .3rem;
+}

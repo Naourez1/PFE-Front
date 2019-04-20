@@ -1,0 +1,868 @@
+<div class="main-container">
+
+    <div class="navbar bg-white breadcrumb-bar">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/home">Overview</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Project</li>
+    </ol>
+      </nav>
+
+      <div class="dropdown">
+        <button class="btn btn-round" role="button" data-toggle="dropdown" aria-expanded="false">
+          <i class="material-icons">settings</i>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right">
+
+          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#project-edit-modal">Edit Project</a>
+          <a class="dropdown-item" href="#">Share</a>
+          <a class="dropdown-item" href="#">Mark as Complete</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item text-danger" href="#">Archive</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-11 col-xl-10">
+          <div class="page-header">
+            <br/>
+            <div class="d-flex align-items-center">
+              <ul class="avatars">
+                <li>
+                  <a href="#" data-toggle="tooltip" data-placement="top" title="Utilisateur 1">
+                    <img alt="Utilisateur 1" class="avatar" src="assets/images/vermeg-chart.jpg">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" data-toggle="tooltip" data-placement="top" title="Utilisateur 2">
+                    <img alt="Utilisateur 2" class="avatar" src="assets/images/vermeg-chart.jpg">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Utilisateur 3">
+                    <img alt="Utilisateur 3" class="avatar" src="assets/images/vermeg-chart.jpg">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" data-toggle="tooltip" data-placement="top" title="Utilisateur 4">
+                    <img alt="Utilisateur 4" class="avatar" src="assets/images/vermeg-chart.jpg">
+                  </a>
+                </li>
+              </ul>
+              <br/>
+              <button class="btn btn-round" data-toggle="modal" data-target="#user-manage-modal">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+             <br/>
+            <div>
+              <div class="progress">
+                <div class="progress-bar bg-success" style="width:25%;"></div>
+              </div>
+              <br/>
+              <div class="d-flex justify-content-between text-small">
+                <div class="d-flex align-items-center">
+                  <i class="material-icons">playlist_add_check</i>
+                  <span>3/12</span>
+                </div>
+                <span>Due 9 days</span>
+              </div>
+            </div>
+          </div>
+          <br/>
+          <ul class="nav nav-tabs nav-fill" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#tasks" role="tab" aria-controls="tasks" aria-selected="true">Tasks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#activity" role="tab" aria-controls="activity" aria-selected="false">Activity</a>
+            </li>
+          </ul>
+          <br/>
+        <br/>
+          <div class="tab-content">
+            <div class="tab-pane fade active show" id="tasks" role="tabpanel" data-filter-list="card-list-body">
+              <div class="row content-list-head">
+                <div class="col-auto">
+                  <h3>Tasks
+                  <button class="btn btn-round" data-toggle="modal" data-target="#task-add-modal">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </h3>
+                </div>
+                <form class="col-md-auto">
+                  <div class="input-group input-group-round">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="material-icons">filter_list</i>
+                      </span>
+                    </div>
+                    <input type="search" class="form-control filter-list-input" placeholder="Filter tasks" aria-label="Filter Tasks">
+                  </div>
+                </form>
+              </div>
+              <br/>
+              <!--end of content list head-->
+              <div class="content-list-body">
+                <div class="card-list">
+                  <div class="card-list-head">
+                    <h6>Evaluation</h6>
+                    <div class="dropdown">
+                      <button class="btn-options" type="button" id="cardlist-dropdown-button-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">more_vert</i>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#">Rename</a>
+                        <a class="dropdown-item text-danger" href="#">Archive</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-list-body filter-list-1554985994602"><div class="card card-task">
+                      <div class="progress">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <div class="card-body">
+                        <div class="card-title">
+                          <a href="#">
+                            <h6 data-filter-by="text" class="H6-filter-by-text">Client objective meeting</h6>
+                          </a>
+                          <span class="text-small">Today</span>
+                        </div>
+                        <div class="card-meta">
+                          <ul class="avatars">
+
+                            <li>
+                              <a href="#" data-toggle="tooltip" title="Kenny">
+                                <img alt="Kenny Tran" class="avatar" src="assets/images/vermeg-chart.jpg">
+                              </a>
+                            </li>
+
+                            <li>
+                              <a href="#" data-toggle="tooltip" title="David">
+                                <img alt="David Whittaker" class="avatar" src="assets/images/vermeg-chart.jpg">
+                              </a>
+                            </li>
+
+                            <li>
+                              <a href="#" data-toggle="tooltip" title="Sally">
+                                <img alt="Sally Harper" class="avatar" src="assets/images/vermeg-chart.jpg">
+                              </a>
+                            </li>
+
+                            <li>
+                              <a href="#" data-toggle="tooltip" title="Kristina">
+                                <img alt="Kristina Van Der Stroem" class="avatar" src="assets/images/vermeg-chart.jpg">
+                              </a>
+                            </li>
+                          </ul>
+                          <div class="d-flex align-items-center">
+                            <i class="material-icons">playlist_add_check</i>
+                            <span>3/4</span>
+                          </div>
+                          <div class="dropdown card-options">
+                            <button class="btn-options" type="button" id="task-dropdown-button-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="material-icons">more_vert</i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">Mark as done</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item text-danger" href="#">Archive</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div><div class="card card-task">
+                      <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <div class="card-body">
+                        <div class="card-title">
+                          <a href="#">
+                            <h6 data-filter-by="text" class="H6-filter-by-text">Target market trend analysis</h6>
+                          </a>
+                          <span class="text-small">5 days</span>
+                        </div>
+                        <div class="card-meta">
+                          <ul class="avatars">
+
+                            <li>
+                              <a href="#" data-toggle="tooltip" title="Peggy">
+                                <img alt="Peggy Brown" class="avatar" src="assets/images/vermeg-chart.jpg">
+                              </a>
+                            </li>
+
+                            <li>
+                              <a href="#" data-toggle="tooltip" title="David">
+                                <img alt="David Whittaker" class="avatar" src="assets/images/vermeg-chart.jpg">
+                              </a>
+                            </li>
+
+                          </ul>
+                          <div class="d-flex align-items-center">
+                            <i class="material-icons">playlist_add_check</i>
+                            <span>2/10</span>
+                          </div>
+                          <div class="dropdown card-options">
+                            <button class="btn-options" type="button" id="task-dropdown-button-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="material-icons">more_vert</i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">Mark as done</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item text-danger" href="#">Archive</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card card-task">
+                      <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      
+                    </div></div>
+                </div>
+                <div class="card-list">
+                  <div class="card-list-head">
+                    <h6>Ideation</h6>
+                    <div class="dropdown">
+                      <button class="btn-options" type="button" id="cardlist-dropdown-button-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">more_vert</i>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#">Rename</a>
+                        <a class="dropdown-item text-danger" href="#">Archive</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-list-body filter-list-1554985994604"><div class="card card-task">
+                      <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <div class="card-body">
+                        <div class="card-title">
+                          <a href="#">
+                            <h6 data-filter-by="text" class="H6-filter-by-text">Create brand mood boards</h6>
+                          </a>
+                          <span class="text-small">14 days</span>
+                        </div>
+                        <div class="card-meta">
+                          <ul class="avatars">
+
+                            <li>
+                              <a href="#" data-toggle="tooltip" title="Sally">
+                                <img alt="Sally Harper" class="avatar" src="assets/images/vermeg-chart.jpg">
+                              </a>
+                            </li>
+
+                            <li>
+                              <a href="#" data-toggle="tooltip" title="Claire">
+                                <img alt="Claire Connors" class="avatar" src="assets/images/vermeg-chart.jpg">
+                              </a>
+                            </li>
+
+                          </ul>
+                          <div class="d-flex align-items-center">
+                            <i class="material-icons">playlist_add_check</i>
+                            <span>1/4</span>
+                          </div>
+                          <div class="dropdown card-options">
+                            <button class="btn-options" type="button" id="task-dropdown-button-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="material-icons">more_vert</i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">Mark as done</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item text-danger" href="#">Archive</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div><div class="card card-task">
+                      <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <div class="card-body">
+                        <div class="card-title">
+                          <a href="#">
+                            <h6 data-filter-by="text" class="H6-filter-by-text">Produce broad concept directions</h6>
+                          </a>
+                          <span class="text-small">21 days</span>
+                        </div>
+                        <div class="card-meta">
+                          <ul class="avatars">
+
+                            <li>
+                              <a href="#" data-toggle="tooltip" title="Peggy">
+                                <img alt="Peggy Brown" class="avatar" src="assets/images/vermeg-chart.jpg">
+                              </a>
+                            </li>
+
+                            <li>
+                              <a href="#" data-toggle="tooltip" title="David">
+                                <img alt="David Whittaker" class="avatar" src="assets/images/vermeg-chart.jpg">
+                              </a>
+                            </li>
+
+                            <li>
+                              <a href="#" data-toggle="tooltip" title="Ravi">
+                                <img alt="Ravi Singh" class="avatar" src="assets/images/vermeg-chart.jpg">
+                              </a>
+                            </li>
+
+                            <li>
+                              <a href="#" data-toggle="tooltip" title="Sally">
+                                <img alt="Sally Harper" class="avatar" src="assets/images/vermeg-chart.jpg">
+                              </a>
+                            </li>
+
+                          </ul>
+                          <div class="d-flex align-items-center">
+                            <i class="material-icons">playlist_add_check</i>
+                            <span>0/5</span>
+                          </div>
+                          <div class="dropdown card-options">
+                            <button class="btn-options" type="button" id="task-dropdown-button-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="material-icons">more_vert</i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">Mark as done</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item text-danger" href="#">Archive</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div><div class="card card-task">
+                      <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <div class="card-body">
+                        <div class="card-title">
+                          <a href="#">
+                            <h6 data-filter-by="text" class="H6-filter-by-text">Present concepts and establish direction</h6>
+                          </a>
+                          <span class="text-small">28 days</span>
+                        </div>
+                        <div class="card-meta">
+                          <ul class="avatars">
+
+                            <li>
+                              <a href="#" data-toggle="tooltip" title="Kristina">
+                                <img alt="Kristina Van Der Stroem" class="avatar" src="assets/images/vermeg-chart.jpg">
+                              </a>
+                            </li>
+
+                            <li>
+                              <a href="#" data-toggle="tooltip" title="Peggy">
+                                <img alt="Peggy Brown" class="avatar" src="assets/images/vermeg-chart.jpg">
+                              </a>
+                            </li>
+
+                            <li>
+                              <a href="#" data-toggle="tooltip" title="Ravi">
+                                <img alt="Ravi Singh" class="avatar" src="assets/images/vermeg-chart.jpg">
+                              </a>
+                            </li>
+
+                          </ul>
+                          <div class="d-flex align-items-center">
+                            <i class="material-icons">playlist_add_check</i>
+                            <span>0/3</span>
+                          </div>
+                          <div class="dropdown card-options">
+                            <button class="btn-options" type="button" id="task-dropdown-button-6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="material-icons">more_vert</i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">Mark as done</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item text-danger" href="#">Archive</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></div>
+                </div>
+                <!--end of content list body-->
+              </div>
+              <!--end of content list-->
+            </div>
+            <!--end of tab-->
+            
+            <div class="tab-pane fade" id="activity" role="tabpanel" data-filter-list="list-group-activity">
+              <div class="content-list">
+                <div class="row content-list-head">
+                  <div class="col-auto">
+                    <h3>Activity</h3>
+                  </div>
+                  <form class="col-md-auto">
+                    <div class="input-group input-group-round">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                          <i class="material-icons">filter_list</i>
+                        </span>
+                      </div>
+                      <input type="search" class="form-control filter-list-input" placeholder="Filter activity" aria-label="Filter activity">
+                    </div>
+                  </form>
+                </div>
+                <!--end of content list head-->
+                <div class="content-list-body">
+                  <ol class="list-group list-group-activity filter-list-1554985994591"><li class="list-group-item">
+                      <div class="media align-items-center">
+                        <ul class="avatars">
+                          <li>
+                            <div class="avatar bg-primary">
+                              <i class="material-icons">playlist_add_check</i>
+                            </div>
+                          </li>
+                          <li>
+                            <img alt="Claire" src="assets/images/vermeg-chart.jpg" class="avatar filter-by-alt" data-filter-by="alt">
+                          </li>
+                        </ul>
+                        <div class="media-body">
+                          <div>
+                            <span class="h6 SPAN-filter-by-text" data-filter-by="text">Claire</span>
+                            <span data-filter-by="text" class="SPAN-filter-by-text">completed the task</span><a href="#" data-filter-by="text" class="A-filter-by-text">Set up client chat channel</a>
+                          </div>
+                          <span class="text-small SPAN-filter-by-text" data-filter-by="text">Just now</span>
+                        </div>
+                      </div>
+                    </li><li class="list-group-item">
+                      <div class="media align-items-center">
+                        <ul class="avatars">
+                          <li>
+                            <div class="avatar bg-primary">
+                              <i class="material-icons">person_add</i>
+                            </div>
+                          </li>
+                          <li>
+                            <img alt="Ravi" src="assets/images/vermeg-chart.jpg" class="avatar filter-by-alt" data-filter-by="alt">
+                          </li>
+                        </ul>
+                        <div class="media-body">
+                          <div>
+                            <span class="h6 SPAN-filter-by-text" data-filter-by="text">Ravi</span>
+                            <span data-filter-by="text" class="SPAN-filter-by-text">joined the project</span>
+                          </div>
+                          <span class="text-small SPAN-filter-by-text" data-filter-by="text">5 hours ago</span>
+                        </div>
+                      </div>
+                    </li><li class="list-group-item">
+                      <div class="media align-items-center">
+                        <ul class="avatars">
+                          <li>
+                            <div class="avatar bg-primary">
+                              <i class="material-icons">playlist_add</i>
+                            </div>
+                          </li>
+                          <li>
+                            <img alt="Kristina" src="assets/images/vermeg-chart.jpg" class="avatar filter-by-alt" data-filter-by="alt">
+                          </li>
+                        </ul>
+                        <div class="media-body">
+                          <div>
+                            <span class="h6 SPAN-filter-by-text" data-filter-by="text">Kristina</span>
+                            <span data-filter-by="text" class="SPAN-filter-by-text">added the task</span><a href="#" data-filter-by="text" class="A-filter-by-text">Produce broad concept directions</a>
+                          </div>
+                          <span class="text-small SPAN-filter-by-text" data-filter-by="text">Yesterday</span>
+                        </div>
+                      </div>
+                    </li><li class="list-group-item">
+                      <div class="media align-items-center">
+                        <ul class="avatars">
+                          <li>
+                            <div class="avatar bg-primary">
+                              <i class="material-icons">playlist_add</i>
+                            </div>
+                          </li>
+                          <li>
+                            <img alt="Marcus" src="assets/images/vermeg-chart.jpg"class="avatar filter-by-alt" data-filter-by="alt">
+                          </li>
+                        </ul>
+                        <div class="media-body">
+                          <div>
+                            <span class="h6 SPAN-filter-by-text" data-filter-by="text">Marcus</span>
+                            <span data-filter-by="text" class="SPAN-filter-by-text">added the task</span><a href="#" data-filter-by="text" class="A-filter-by-text">Present concepts and establish direction</a>
+                          </div>
+                          <span class="text-small SPAN-filter-by-text" data-filter-by="text">Yesterday</span>
+                        </div>
+                      </div>
+                    </li></ol>
+                </div>
+              </div>
+              <!--end of content list-->
+            </div>
+          </div>
+          <form class="modal fade" id="user-manage-modal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Manage Users</h5>
+                  <button type="button" class="close btn btn-round" data-dismiss="modal" aria-label="Close">
+                    <i class="material-icons">close</i>
+                  </button>
+                </div>
+                <!--end of modal head-->
+                <div class="modal-body">
+                  <div class="users-manage" data-filter-list="form-group-users">
+                    <div class="mb-3">
+                      <ul class="avatars text-center">
+
+                        <li>
+                          <img alt="Claire Connors" src="assets/images/vermeg-chart.jpg" class="avatar" data-toggle="tooltip" data-title="Claire Connors">
+                        </li>
+
+                        <li>
+                          <img alt="Marcus Simmons" src="assets/images/vermeg-chart.jpg" class="avatar" data-toggle="tooltip" data-title="Marcus Simmons">
+                        </li>
+
+                        <li>
+                          <img alt="Peggy Brown" src="assets/images/vermeg-chart.jpg" class="avatar" data-toggle="tooltip" data-title="Peggy Brown">
+                        </li>
+
+                      </ul>
+                    </div>
+                    <div class="input-group input-group-round">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                          <i class="material-icons">filter_list</i>
+                        </span>
+                      </div>
+                      <input type="search" class="form-control filter-list-input" placeholder="Filter members" aria-label="Filter Members">
+                    </div>
+                    <div class="form-group-users filter-list-1554985994586"><div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="user-manage-1" checked="">
+                        <label class="custom-control-label" for="user-manage-1">
+                          <span class="d-flex align-items-center">
+                            <img alt="Claire Connors" src="assets/images/vermeg-chart.jpg" class="avatar mr-2">
+                            <span class="h6 mb-0 SPAN-filter-by-text" data-filter-by="text">Claire Connors</span>
+                          </span>
+                        </label>
+                      </div><div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="user-manage-2" checked="">
+                        <label class="custom-control-label" for="user-manage-2">
+                          <span class="d-flex align-items-center">
+                            <img alt="Marcus Simmons" src="assets/images/vermeg-chart.jpg" class="avatar mr-2">
+                            <span class="h6 mb-0 SPAN-filter-by-text" data-filter-by="text">Marcus Simmons</span>
+                          </span>
+                        </label>
+                      </div><div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="user-manage-8">
+                        <label class="custom-control-label" for="user-manage-8">
+                          <span class="d-flex align-items-center">
+                            <img alt="David Whittaker" src="assets/images/vermeg-chart.jpg" class="avatar mr-2">
+                            <span class="h6 mb-0 SPAN-filter-by-text" data-filter-by="text">David Whittaker</span>
+                          </span>
+                        </label>
+                      </div><div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="user-manage-12">
+                        <label class="custom-control-label" for="user-manage-12">
+                          <span class="d-flex align-items-center">
+                            <img alt="Kenny Tran" src="assets/images/vermeg-chart.jpg" class="avatar mr-2">
+                            <span class="h6 mb-0 SPAN-filter-by-text" data-filter-by="text">Kenny Tran</span>
+                          </span>
+                        </label>
+                      </div></div>
+                  </div>
+                </div>
+                <!--end of modal body-->
+                <div class="modal-footer">
+                  <button role="button" class="btn btn-danger" type="submit">
+                    Done
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+          <form class="modal fade" id="project-edit-modal" tabindex="-1" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Edit Project</h5>
+                  <button type="button" class="close btn btn-round" data-dismiss="modal" aria-label="Close">
+                    <i class="material-icons">close</i>
+                  </button>
+                </div>
+                <!--end of modal head-->
+                <ul class="nav nav-tabs nav-fill" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="project-edit-details-tab" data-toggle="tab" href="#project-edit-details" role="tab" aria-controls="project-edit-details" aria-selected="true">Details</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="project-edit-members-tab" data-toggle="tab" href="#project-edit-members" role="tab" aria-controls="project-edit-members" aria-selected="false">Members</a>
+                  </li>
+                </ul>
+                <div class="modal-body">
+                  <div class="tab-content">
+                    <div class="tab-pane fade show active" id="project-edit-details" role="tabpanel">
+                      <h6>General Details</h6>
+                      <div class="form-group row align-items-center">
+                        <label class="col-3">Name</label>
+                        <input class="form-control col" type="text" value="Brand Concept and Design" name="project-name">
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-3">Description</label>
+                        <textarea class="form-control col" rows="3" placeholder="Project description" name="project-description">Research, ideate and present brand concepts for client consideration</textarea>
+                      </div>
+                      <hr>
+                      <h6>Timeline</h6>
+                      <div class="form-group row align-items-center">
+                        <label class="col-3">Start Date</label>
+                        <input class="form-control col" type="date" name="project-start">
+                      </div>
+                      <div class="form-group row align-items-center">
+                        <label class="col-3">Due Date</label>
+                        <input class="form-control col" type="date" name="project-due">
+                      </div>
+                      <div class="alert alert-warning text-small" role="alert">
+                        <span>You can change due dates at any time.</span>
+                      </div>
+                      <hr>
+                      <h6>Visibility</h6>
+                      <div class="row">
+                        <div class="col">
+                          <div class="custom-control custom-radio">
+                            <input type="radio" id="visibility-everyone" name="visibility" class="custom-control-input" checked="">
+                            <label class="custom-control-label" for="visibility-everyone">Everyone</label>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="custom-control custom-radio">
+                            <input type="radio" id="visibility-members" name="visibility" class="custom-control-input">
+                            <label class="custom-control-label" for="visibility-members">Members</label>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="custom-control custom-radio">
+                            <input type="radio" id="visibility-me" name="visibility" class="custom-control-input">
+                            <label class="custom-control-label" for="visibility-me">Just me</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="project-edit-members" role="tabpanel">
+                      <div class="users-manage" data-filter-list="form-group-users">
+                        <div class="mb-3">
+                          <ul class="avatars text-center">
+
+                            <li>
+                              <img alt="Claire Connors" src="assets/images/vermeg-chart.jpg" class="avatar" data-toggle="tooltip" data-title="Claire Connors">
+                            </li>
+
+                            <li>
+                              <img alt="Marcus Simmons" src="assets/images/vermeg-chart.jpg" class="avatar" data-toggle="tooltip" data-title="Marcus Simmons">
+                            </li>
+
+                            <li>
+                              <img alt="Peggy Brown" src="assets/images/vermeg-chart.jpg" class="avatar" data-toggle="tooltip" data-title="Peggy Brown">
+                            </li>
+
+                            <li>
+                              <img alt="Harry Xai" src="assets/images/vermeg-chart.jpg"class="avatar" data-toggle="tooltip" data-title="Harry Xai">
+                            </li>
+
+                          </ul>
+                        </div>
+                        <div class="input-group input-group-round">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">
+                              <i class="material-icons">filter_list</i>
+                            </span>
+                          </div>
+                          <input type="search" class="form-control filter-list-input" placeholder="Filter members" aria-label="Filter Members">
+                        </div>
+                        <div class="form-group-users filter-list-1554985994578"><div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="project-user-1" checked="">
+                            <label class="custom-control-label" for="project-user-1">
+                              <span class="d-flex align-items-center">
+                                <img alt="Claire Connors" src="assets/img/avatar-female-1.jpg" class="avatar mr-2">
+                                <span class="h6 mb-0 SPAN-filter-by-text" data-filter-by="text">Claire Connors</span>
+                              </span>
+                            </label>
+                          </div><div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="project-user-2" checked="">
+                            <label class="custom-control-label" for="project-user-2">
+                              <span class="d-flex align-items-center">
+                                <img alt="Marcus Simmons" src="assets/img/avatar-male-1.jpg" class="avatar mr-2">
+                                <span class="h6 mb-0 SPAN-filter-by-text" data-filter-by="text">Marcus Simmons</span>
+                              </span>
+                            </label>
+                          </div><div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="project-user-3" checked="">
+                            <label class="custom-control-label" for="project-user-3">
+                              <span class="d-flex align-items-center">
+                                <img alt="Peggy Brown" src="assets/img/avatar-female-2.jpg" class="avatar mr-2">
+                                <span class="h6 mb-0 SPAN-filter-by-text" data-filter-by="text">Peggy Brown</span>
+                              </span>
+                            </label>
+                          </div><div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="project-user-4" checked="">
+                            <label class="custom-control-label" for="project-user-4">
+                              <span class="d-flex align-items-center">
+                                <img alt="Harry Xai" src="assets/img/avatar-male-2.jpg" class="avatar mr-2">
+                                <span class="h6 mb-0 SPAN-filter-by-text" data-filter-by="text">Harry Xai</span>
+                              </span>
+                            </label>
+                          </div><div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="project-user-5">
+                            <label class="custom-control-label" for="project-user-5">
+                              <span class="d-flex align-items-center">
+                                <img alt="Sally Harper" src="assets/img/avatar-female-3.jpg" class="avatar mr-2">
+                                <span class="h6 mb-0 SPAN-filter-by-text" data-filter-by="text">Sally Harper</span>
+                              </span>
+                            </label>
+                          </div><div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="project-user-6">
+                            <label class="custom-control-label" for="project-user-6">
+                              <span class="d-flex align-items-center">
+                                <img alt="Ravi Singh" src="assets/img/avatar-male-3.jpg" class="avatar mr-2">
+                                <span class="h6 mb-0 SPAN-filter-by-text" data-filter-by="text">Ravi Singh</span>
+                              </span>
+                            </label>
+                          </div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--end of modal body-->
+                <div class="modal-footer">
+                  <button role="button" class="btn btn-primary" type="submit">
+                    Save
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+          <form class="modal fade" id="task-add-modal" tabindex="-1" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">New Task</h5>
+                  <button type="button" class="close btn btn-round" data-dismiss="modal" aria-label="Close">
+                    <i class="material-icons">close</i>
+                  </button>
+                </div>
+                <!--end of modal head-->
+                <ul class="nav nav-tabs nav-fill" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="task-add-details-tab" data-toggle="tab" href="#task-add-details" role="tab" aria-controls="task-add-details" aria-selected="true">Details</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="task-add-members-tab" data-toggle="tab" href="#task-add-members" role="tab" aria-controls="task-add-members" aria-selected="false">Members</a>
+                  </li>
+                </ul>
+                <div class="modal-body">
+                  <div class="tab-content">
+                    <div class="tab-pane fade show active" id="task-add-details" role="tabpanel">
+                      <h6>General Details</h6>
+                      <div class="form-group row align-items-center">
+                        <label class="col-3">Name</label>
+                        <input class="form-control col" type="text" placeholder="Task name" name="task-name">
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-3">Description</label>
+                        <textarea class="form-control col" rows="3" placeholder="Task description" name="task-description"></textarea>
+                      </div>
+                      <hr>
+                      <h6>Timeline</h6>
+                      <div class="form-group row align-items-center">
+                        <label class="col-3">Start Date</label>
+                        <input class="form-control col" type="date" name="task-start">
+                      </div>
+                      <div class="form-group row align-items-center">
+                        <label class="col-3">Due Date</label>
+                        <input class="form-control col" type="date" name="task-due">
+                      </div>
+                      <div class="alert alert-warning text-small" role="alert">
+                        <span>You can change due dates at any time.</span>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="task-add-members" role="tabpanel">
+                      <div class="users-manage" data-filter-list="form-group-users">
+                        <div class="mb-3">
+                          <ul class="avatars text-center">
+
+                            <li>
+                              <img alt="Claire Connors" src="assets/img/avatar-female-1.jpg" class="avatar" data-toggle="tooltip" data-title="Claire Connors">
+                            </li>
+
+                            <li>
+                              <img alt="Marcus Simmons" src="assets/img/avatar-male-1.jpg" class="avatar" data-toggle="tooltip" data-title="Marcus Simmons">
+                            </li>
+
+                            <li>
+                              <img alt="Peggy Brown" src="assets/img/avatar-female-2.jpg" class="avatar" data-toggle="tooltip" data-title="Peggy Brown">
+                            </li>
+
+                            <li>
+                              <img alt="Harry Xai" src="assets/img/avatar-male-2.jpg" class="avatar" data-toggle="tooltip" data-title="Harry Xai">
+                            </li>
+
+                          </ul>
+                        </div>
+                        <div class="input-group input-group-round">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">
+                              <i class="material-icons">filter_list</i>
+                            </span>
+                          </div>
+                          <input type="search" class="form-control filter-list-input" placeholder="Filter members" aria-label="Filter Members">
+                        </div>
+                        <div class="form-group-users filter-list-1554985994570"><div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="task-user-1" checked="">
+                            <label class="custom-control-label" for="task-user-1">
+                              <span class="d-flex align-items-center">
+                                <img alt="Claire Connors" src="assets/images/vermeg-chart.jpg" class="avatar mr-2">
+                                <span class="h6 mb-0 SPAN-filter-by-text" data-filter-by="text">Claire Connors</span>
+                              </span>
+                            </label>
+                          </div><div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="task-user-2" checked="">
+                            <label class="custom-control-label" for="task-user-2">
+                              <span class="d-flex align-items-center">
+                                <img alt="Marcus Simmons" src="assets/images/vermeg-chart.jpg" class="avatar mr-2">
+                                <span class="h6 mb-0 SPAN-filter-by-text" data-filter-by="text">Marcus Simmons</span>
+                              </span>
+                            </label>
+                          </div><div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="task-user-3" checked="">
+                            <label class="custom-control-label" for="task-user-3">
+                              <span class="d-flex align-items-center">
+                                <img alt="Peggy Brown" src="assets/images/vermeg-chart.jpg"class="avatar mr-2">
+                                <span class="h6 mb-0 SPAN-filter-by-text" data-filter-by="text">Peggy Brown</span>
+                              </span>
+                            </label>
+                          </div><div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="task-user-12">
+                            <label class="custom-control-label" for="task-user-12">
+                              <span class="d-flex align-items-center">
+                                <img alt="Kenny Tran" src="assets/images/vermeg-chart.jpg" class="avatar mr-2">
+                                <span class="h6 mb-0 SPAN-filter-by-text" data-filter-by="text">Kenny Tran</span>
+                              </span>
+                            </label>
+                          </div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--end of modal body-->
+                <div class="modal-footer">
+                  <button role="button" class="btn btn-danger" type="submit">
+                    Create Task
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
